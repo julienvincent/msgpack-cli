@@ -1,0 +1,10 @@
+{:paths ["src" "resources"]
+
+ :deps {org.clojure/clojure {:mvn/version "1.11.1"}
+        metosin/jsonista {:mvn/version "0.3.8"}
+        clojure-msgpack/clojure-msgpack {:mvn/version "1.2.1"}}
+
+ :aliases {:build {:deps {io.github.clojure/tools.build {:mvn/version "0.9.5"}}
+                   :ns-default build}
+
+           :native {:extra-deps {com.github.clj-easy/graal-build-time {:mvn/version "1.0.5"}}}}}
